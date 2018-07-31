@@ -9,9 +9,30 @@ const rl = readline.createInterface({
 
 
 function rockPaperScissors(hand1, hand2) {
-
-  // Write code here
-
+  if(hand1===hand2){
+    return 'tie'
+  };
+  if(hand1==='rock'){
+    if(hand2==='scissors'){
+      return 'hand1 wins'
+    }
+    else(return 'hand2 wins')
+  };
+  if(hand1==='scissors'){
+    if(hand2==='paper'){
+      return 'hand1 wins'
+    }
+    else(return 'hand2 wins')
+  };
+  if(hand1==='paper'){
+    if(hand2==='rock'){
+      return 'hand1 wins'
+    }
+    else(return 'hand2 wins')
+  };// If the two hands are equal to one another the result is a tie.
+    // If hand1 is rock and hand2 is scissors, hand1 wins. If hand2 is paper, it wins.
+    // If hand1 is scissors and hand2 is paper, hand1 wins. If hand2 is rock, hand2 wins.
+    // If hand1 is paper and hand2 is rock, hand1 wins. If hand2 is scissors, hand2 wins.
 }
 
 function getPrompt() {
