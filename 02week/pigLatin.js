@@ -8,10 +8,30 @@ const rl = readline.createInterface({
 });
 
 
-function pigLatin(word) {
+function pigLatin(str){
+  isValidInput(str)=>isNaN
+  const vowel = ['a','e','i','o','u'];
+  const words = str.split(" ");
+  const pig = "";
+  for(i = 0; i < words.length; i++){
+    words[i] += words[i][0];
+    words[i] = words[i].slice(1);
+    words[i] += "ay";
+    pig += " " + words[i];
+}
+}
 
-  // Your code here
+pigLatin("consonant");
 
+  // (=>isValidInput())Check if it's a valid input(no numbers).
+  //For every word, take the first consonant(s) and add to the end with an 'ay'suffix. Find a way to specify vowels from consonants.
+  // Create vowel variable(possibly create array of vowels to distinguish).
+  //Create ?/: for vowel/consonant operation.
+  //(=>isVowel() can hold vowel array)Split word and go through each letter up to first vowel(test if its a vowel). If not a vowel split to new array.
+  //Check if first letter is a vowel or consonant, if it's a vowel add suffix'yay'.
+  //Trim letter caps.
+  //Target first letter(s) and move to the end(find syntax).
+  //(=>addToEnd)Join first letter plus suffix to rest of string(if it's a consonant).
 }
 
 
