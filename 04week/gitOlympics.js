@@ -4,4 +4,5 @@ const printListOfOlympians=(namesArray)=>{
     console.log(element);
   });
 }
+
 printListOfOlympians(['Quincy','Justin', 'Sarah', 'Michael', 'Usain']);
