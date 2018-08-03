@@ -5,4 +5,4 @@ const printListOfOlympians=(namesArray)=>{
   });
 }
 
-printListOfOlympians(['Quincy','Justin', 'Sarah', 'Michael', 'Usain']);
+printListOfOlympians(['Justin', 'Sarah', 'Michael', 'Usain']);
