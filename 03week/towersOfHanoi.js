@@ -13,6 +13,12 @@ let stacks = {
   c: []
 };
 
+const stackA=stacks.a;
+const stackB=stacks.b;
+const stackC=stacks.c;
+const stacksArr=[stackA, stackB, stackC];
+// Create an array that houses all stacks so a forEach function can be applied(shortens code).
+
 function printStacks() {
   console.log("a: " + stacks.a);
   console.log("b: " + stacks.b);
@@ -20,22 +26,54 @@ function printStacks() {
 }
 
 function movePiece() {
-  // Your code here
+
+     let startStack.pop();
+     let endStack.push(startStack);
+  //Write a function that allows you to move the blocks(pop/push).
+
+    }
+
+})
+
+});
+
+movePiece();
 
 }
 
 function isLegal() {
-  // Your code here
+
+  forEach (i = 0; i < stacksArr.length-1; i++) {
+       if (stacksArr[i] > stacksArr[i + 1]){
+         const oK=stacksArr.pop();
+       }
+  // Write a test that insures that the piece cannot be stacked on a smaller block.
+  // The value for each piece needs to have a previous piece is less than current piece function.
 
 }
 
 function checkForWin() {
-  // Your code here
+
+    forEach (i = 0; i < stacksArr.length-1; i++) {
+      if (stacksArr[i] > stacksArr[i+1] && stacksArr.length===4) {
+        return "winner";
+      }else{
+        return "try again"
+      }
+    }
+  }
+  checkForWinner();
+  // Write a function that shows a win if all of the pieces are successfully moved to one stack.
 
 }
 
 function towersOfHanoi(startStack, endStack) {
-  // Your code here
+  const stack1 = stacks.c.slice(0,4);
+  const stack2 = stacks.a.concat(stacks.c);
+
+  console.log(stack2);
+
+  // Create a function to evaluate the beginning and ending of a stack.
 
 }
 
