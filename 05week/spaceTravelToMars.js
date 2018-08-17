@@ -9,7 +9,32 @@ let jobTypes = {
   programmer: 'Any Ship!'
 };
 
-// Your code here
+class CrewMember {
+  constructor(name, job, specialSkill){
+    this.name = name;
+    this.job = job;
+    this.specialSkill = specialSkill;
+  }
+  const enterShip(Ship)=> {this.job = jobTypes[''] 
+
+  }
+}
+class Ship {
+  constructor(name, type, ability, crew){
+    this.name = name;
+    this.type = type;
+    this.ability = ability;
+    this.crew = crew;
+  }
+
+}
+
+// Create a class called CrewMember with name, job, special skill. <-List in the constructor
+  // Makes sure each crew member has a diff. job.
+  //'.enterShip' is calling on CrewMember class.
+// Adds a ship(class), categorizes it, and assesses what it can do. <-List in the constructor. Initial ship value is set to null.
+  //Tests to see if ship can actually do its job. Set crew to array(as per '.length')
+  //Ship will have a mission statement.
 
 //tests
 if (typeof describe === 'function'){
