@@ -10,11 +10,41 @@ const rl = readline.createInterface({
 
 function Checker() {
   // Your code here
+  const player1="B";
+  const player2="R";
+  const changePlayer=()=>{
+    	if (player=="B")
+    		player="R";
+    	else
+    		player="B";
+    }
+
+  const isValidMove=(whichPiece, toWhere)=>{
+    if(whichPiece.symbol=player1){
+
+    }
+
+  }
+
+
+const whichPiece=Board.grid[row][column].symbol.onclick
+
 }
+const toWhere=Board.grid[row][column].onclick
+
+}
+//For isValidMove function,
+  //x can only move [r+1] && [c-1 || c+1]
+  //y can only move [r-1] && [c-1 || c+1]
+  //Pieces can only move diagonally. Checkers pieces will always move 9 or 11.
+  // Make sure input stays on the board boundaries.
+
+//Create a moveChecker function, which takes the piece and desired location, outside of the checker function.
+ //killMove()function will jump over the oposing teams checker if right next to whichPiece.
 
 class Board {
   constructor() {
-    this.grid = []
+    this.grid = [];
   }
   // method that creates an 8x8 array, filled with null values
   createGrid() {
@@ -52,6 +82,8 @@ class Board {
     console.log(string);
   }
 
+
+  }
   // Your code here
 }
 
@@ -61,6 +93,31 @@ class Game {
   }
   start() {
     this.board.createGrid();
+    const symbol1=()=>{
+      board.viewGrid.rowOfCheckers.push(player1)
+    }
+    const symbol2=()=>{
+      board.viewGrid.rowOfCheckers.push(player2)
+    }
+    const boardStart=()=>{
+      for([0][1], [0][3], [0][5], [0][7], [1][0], [1][2], [1][4], [1][6],
+        [2][1], [2][3], [2][5], [2][7]){
+        return symbol1();
+      for([5][0], [5][2], [5][4], [5][6], [6][0], [6][2], [6][4], [6][6],
+        [7][0], [7][2], [7][4], [7][6]){
+          return symbol2();
+      }
+
+      }
+    }
+    }
+  const moveChecker=()=> {
+    for(whichPiece){
+      Board.grid[row][column].push(symbol);
+
+    }
+
+
   }
 }
 
