@@ -1,6 +1,12 @@
 if (typeof describe === 'function') {
-//The tie test is already complete with all 3 possible tests of tie.
   describe('#rockPaperScissors()', () => {
+//The first test should insure that the entry is valid.
+    it('should detect a valid entry', ()=> {
+      assert.equal(rockPaperScissors('rock','paddle'), "Hand two, please use valid entry!");
+      assert.equal(rockPaperScissors('car','paper'), "Hand one, please use valid entry!");
+      assert.equal(rockPaperScissors('scissors','chicken'), "Hand two, please use valid entry!");
+    });
+//The tie test is already complete with all 3 possible tests of tie.
     it('should detect a tie', () => {
       assert.equal(rockPaperScissors('rock', 'rock'), "It's a tie!");
       assert.equal(rockPaperScissors('paper', 'paper'), "It's a tie!");
